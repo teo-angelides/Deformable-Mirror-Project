@@ -31,7 +31,7 @@ values_list = list(range(0, 4095, 2))
 
 '''The below lines are the ones that are responsible for the control box/ PC communication cteating a 
 server/client relationship. In the serverAddress add your raspbery Pi Address instead (ex.111.222.333.444)'''
-serverAddress=('169.254.157.110',2222)
+serverAddress=('111.222.333.444',2222)
 bufferSize=1024
 UDPClient=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 
