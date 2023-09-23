@@ -357,7 +357,7 @@ for generation in range(NUM_GENERATIONS):
     
     elite_q.append((fitness_scores[0][1][0],fitness_scores[0][1][1],fitness_scores[0][1][2],fitness_scores[0][1][3])) #holds all the info about the best individuals of each generation. Thats what we see at the end.
     
-    stable_ind.append((fitness_scores2[0],fitness_scores2[2])) #holds the data for the test/stabel individual to test the stability
+    stable_ind.append((fitness_scores2[0],fitness_scores2[2])) #holds the data for the test/stable individual to test the stability
     
     # Select the best 10 individuals for creating new children
     top_individuals = [individual for individual, _ in fitness_scores[:TOP_IND]]
