@@ -281,9 +281,6 @@ def fitness_function(individual):
         cmd= '[0,0,0,0,0]'   #makes all the actuators go to 0 before the next command to reduce the hysteresis as much as possible
         cmd=cmd.encode('utf-8')
         UDPClient.sendto(cmd,serverAddress)
-        # Inside the loop
-        # After creating the figure and axes
-        # save_plot(fig, f'generation_{generation}_plot_{1/Q}_{individual}.pickle')
         return (rms,rms2,rms3,rms4)
 
 
@@ -330,7 +327,6 @@ def generate_random_individual():     #in the fixed list some 'forced' configura
 
 
 # Create the initial population
-# population = [generate_random_individual() for _ in range(POPULATION_SIZE)]
 population = generate_random_individual()
 
 # List to store individuals and their corresponding generations
